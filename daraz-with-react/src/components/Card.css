@@ -1,8 +1,12 @@
 .mainCardContainer{
-  margin-top: 3rem;
+  margin-top: 4rem;
+}
+.mainCardContainer h1{
+  padding-left: 8rem;
 }
 .recipe-grid{
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
  
 }
