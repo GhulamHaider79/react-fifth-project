@@ -20,7 +20,7 @@ const Header = () => {
                                 <NavLink
                                     to="#"
                                     className={({ isActive }) => `${isActive ? "text-orange-700" : "text-gray-700"} `}>
-                                    SELL ON DARAZ
+                                    SELL ON CARTCRASE
                                 </NavLink>
                             </li>
                             <li>
@@ -49,7 +49,7 @@ const Header = () => {
 
                             <div className="searchBox">
                                <div className="searchInp">
-                               <input type="search" placeholder='Search In Daraz' />
+                               <input type="search" placeholder='Search In CartCrase' />
                                <button>Search</button>
                                </div>
                                 

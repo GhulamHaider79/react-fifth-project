@@ -1,20 +1,18 @@
-import { useState } from 'react'
-
-import './App.css'
-
+import React from 'react';
+import { RecipeProvider } from './components/RecipeContext';
+import Carousel from './components/Carousel';
 import Header from './components/Header'
-import { Outlet } from 'react-router-dom'
-import Carousel from './components/Carousel'
+import Card from './components/Card';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <Header />
-      <Carousel />
-    </>
-  )
+    <RecipeProvider>
+         <Header />
+        <Carousel />
+        <Card />
+      
+    </RecipeProvider>
+  );
 }
 
-export default App
+export default App;

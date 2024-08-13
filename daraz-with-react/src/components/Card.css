@@ -1,0 +1,47 @@
+.mainCardContainer{
+  margin-top: 3rem;
+}
+.recipe-grid{
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Adjust width as needed */
+    margin: 10px;
+    background-color: #fff;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 150px; 
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card-title {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .card-ingredients {
+    list-style: none;
+    padding: 0;
+    list-style: circle;
+    padding-left: 10px;
+   
+  }
+  
+  .card-ingredients li {
+    margin-bottom: 5px;
+    font-size: 10px;
+  }
+  
+  
