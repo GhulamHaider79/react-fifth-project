@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react';
 
-// Create the context
+
 export const RecipeContext = createContext();
 
 export const RecipeProvider = ({ children }) => {
@@ -11,11 +11,11 @@ export const RecipeProvider = ({ children }) => {
       try {
         const response = await fetch('https://dummyjson.com/recipes');
         const data = await response.json();
-        console.log('Fetched data:', data); // Debug: Log fetched data
+        // console.log('Fetched data:', data);
 
-        setRecipes(data.recipes); // Set the fetched data
+        setRecipes(data.recipes);
       } catch (error) {
-        console.error('Error fetching data:', error.message); // Debug: Log errors
+        console.error('Error fetching data:', error.message);
       }
     };
 

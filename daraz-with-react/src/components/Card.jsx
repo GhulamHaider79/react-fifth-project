@@ -1,9 +1,12 @@
 import React, { useContext } from 'react';
 import { RecipeContext } from './RecipeContext';
 import './Card.css'; // Optional: for styling
+import { Link } from 'react-router-dom';
 
 function Card() {
   const recipes = useContext(RecipeContext);
+
+  
 
   if (!recipes || recipes.length === 0) {
     return <div>No recipes available</div>;
@@ -16,9 +19,13 @@ function Card() {
         
       {recipes.map((recipe) => (
         <div className="card" key={recipe.id}>
-          <img src={recipe.image} alt={recipe.name} className="card-image" />
+         <Link  to={`/recipe/${recipe.id}`}>
+         <img src={recipe.image} alt={recipe.name} className="card-image" />
+         </Link>
           <div className="card-content">
-            <h3 className="card-title">{recipe.name}</h3>
+           <Link to={`/recipe/${recipe.id}`} >
+             <h3 className="card-title">{recipe.name}</h3>
+           </Link>
             <h3>ingredients</h3>
             
             <ul className="card-ingredients">
@@ -34,6 +41,8 @@ function Card() {
     </div>
     </div>
   );
-}
+};
+
 
 export default Card;
+

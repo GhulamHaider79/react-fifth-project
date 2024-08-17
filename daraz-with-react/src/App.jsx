@@ -12,7 +12,7 @@ function App() {
         <Card />
       
     </RecipeProvider>
-  );
-}
+  )
+};
 
-export default App;
+export default App
