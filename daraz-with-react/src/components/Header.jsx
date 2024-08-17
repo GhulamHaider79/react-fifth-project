@@ -4,8 +4,8 @@ import { Link, NavLink } from 'react-router-dom'
 
 const Header = () => {
     return (
-        <header className="shadow sticky z-50 top-0">
-            <nav className="">
+        <header className="header">
+            <nav className="header-Nav">
                 <div className="mainNavbar">
                     <div className="topNav">
                         <ul>

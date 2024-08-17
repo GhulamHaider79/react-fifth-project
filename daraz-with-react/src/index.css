@@ -1,5 +1,15 @@
+body{
+  margin: 0;
+  padding: 0;
+ 
+}
+#root{
+  --swiper-theme-color: #ffffff;
+}
 .mainNavbar {
   background-color: #fa7a39;
+  margin-top: -10px;
+  padding: 10px;
 }
 
 .topNav>ul {

@@ -2,13 +2,15 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  overflow: hidden; /* Ensure no scrollbars appear */
+  overflow: hidden; 
+  margin-top: 1px;
 }
 
 .carousel {
   width: 100%;
-  height: 60vh; /* Adjust as needed */
-  overflow: hidden; /* Hide any overflow */
+  height: 60vh; 
+  overflow: hidden; 
+  
 }
 
 .mySwiper {
@@ -19,23 +21,30 @@
 }
 
 .swiper-slide {
-  background-size: contain; /* Ensure the whole image is visible */
+  background-size: contain; 
   background-position: center;
   background-repeat: no-repeat;
-  height: 60vh; /* Match the height of the carousel */
+  height: 60vh; 
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-size: 1.5em;
-  overflow: hidden; /* Hide any overflow */
+  overflow: hidden; 
+  
 }
+
+
 
 .carousel-content {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.5); 
   padding: 10px;
   border-radius: 5px;
+  
+}
+.carousel-content h3{
+  color: #ffffff;
 }
